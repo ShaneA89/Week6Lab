@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS demo</title>
+	<!-- my CSS  -->
+	<link href="styles.css" rel="stylesheet" >
+
+	<!-- javascript -->
+	<script type="text/javascript">
+		//javascript goes here inside script tags
+		//document.write("Hi"); //write direct to webpage
+		document.write("<h1>Hello World!</h1>"); //using HTML tags
+
+		//this is a var declare and value assigned
+		var name = "Jo";
+		document.write("Hi " + name+ "\n how are you? "); //making use of the variable
+	</script>
+  </head>
+
+  <body>
+	<p>my paragraph</p>
+	<a href="page2.html">Page 2</a> <!-- Creates a link to second page -->
+  <br><br>
+  <!-- The below will create a button, once clicked the time/date will be displayed below -->
+  <button type="button"
+  onclick="document.getElementById('time/date').innerHTML = Date()">
+  Click me to display Date and Time.</button>
+
+  <p id="time/date"></p>
+
+  <!-- The below will create a button that will display text and once clicked will chnage the text from one sentence to another -->
+
+  <p id="textchange">Lets change the text!.</p>
+
+<button type="button" onclick='document.getElementById("textchange").innerHTML = "Hello Hello Hello!"'>Click Me!</button>
+
+<br><br>
+
+<!-- The below will create a button that once clicked will hide elemets/text -->
+
+<p id="hidetext">Now lets hide some elements!.</p>
+
+<button type="button" onclick="document.getElementById('hidetext').style.display='none'">Click Me!</button>
+
+</body>
+</html>
